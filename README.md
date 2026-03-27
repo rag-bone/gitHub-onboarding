@@ -6,15 +6,15 @@ Welcome! Follow these steps to get access set up. Read through the whole guide b
 
 ## Step 1 – Create or confirm your GitHub account
 
-You need a GitHub account to access the Rag & Bone org. If you don't have one, create one at [github.com](https://github.com) using your **corporate email address**.
+You need a GitHub account to access your org. If you don't have one, create one at [github.com](https://github.com) using your **corporate email address**.
 
-You must create a new GitHub account using your **corporate email address**. Personal GitHub accounts are not permitted for accessing Rag & Bone resources.
+You must create a new GitHub account using your **corporate email address**. Personal GitHub accounts are not permitted for accessing org resources.
 
 ---
 
 ## Step 2 – Enable Two-Factor Authentication (2FA)
 
-Rag & Bone requires 2FA on all GitHub accounts. If your account doesn't have it enabled, you will be blocked from accessing the org.
+Your org requires 2FA on all GitHub accounts. If your account doesn't have it enabled, you will be blocked from accessing the org.
 
 1. Go to **GitHub → Settings → Password and authentication → Two-factor authentication**
 2. Enable 2FA using one of the approved methods: **authenticator app, passkey, or security key**
@@ -27,8 +27,8 @@ Rag & Bone requires 2FA on all GitHub accounts. If your account doesn't have it 
 
 You will receive two invitation emails from GitHub:
 
-1. **Enterprise invitation** – grants you access to the Rag & Bone enterprise account
-2. **Organization invitation** – grants you access to the `rag-bone` org and its repositories
+1. **Enterprise invitation** – grants you access to your org's enterprise account
+2. **Organization invitation** – grants you access to the `your-org` org and its repositories
 
 **Accept any invitations you receive.** If you received two, accept them in order — enterprise first, then org.
 
@@ -38,19 +38,19 @@ You will receive two invitation emails from GitHub:
 
 ## Step 4 – Authorize SSO
 
-This step links your GitHub account to your Rag & Bone corporate identity. It is required even if you were able to accept the invitations without it.
+This step links your GitHub account to your corporate identity. It is required even if you were able to accept the invitations without it.
 
 1. Go to **[https://myapps.microsoft.com](https://myapps.microsoft.com)**
-2. Select the **"sso-GitHub"** tile and sign in with your Rag & Bone credentials
-3. Then go to **[https://github.com/enterprises/ragbone/sso](https://github.com/enterprises/ragbone/sso)** and click **Authorize**
+2. Select the **SSO tile provided by your admin** and sign in with your corporate credentials
+3. Then go to the **SSO authorization link provided by your admin** and click **Authorize**
 
-> ⚠️ If you skip this step, your GitHub account will not be recognized as a Rag & Bone member and you may lose access to org resources in the future.
+> ⚠️ If you skip this step, your GitHub account will not be recognized as an org member and you may lose access to org resources in the future.
 
 ---
 
 ## Step 5 – Verify Access
 
-Confirm you can see the `rag-bone` organization and the repositories your team should have access to.
+Confirm you can see the `your-org` organization and the repositories your team should have access to.
 
 If you can see the org but not any repositories, you may not have been added to a team yet — this is an admin action. Contact your admin or [your contact / IT / Slack channel].
 
@@ -84,4 +84,4 @@ GitHub can mask your real email address in commit metadata and notifications. En
 | Can't see org repos after accepting invitations | Make sure you completed Step 4 (SSO authorization). If that's done, contact your admin — you may not have been added to a team yet. |
 | Prompted to create a new account | Stop — sign in to your existing GitHub account instead, then complete Step 4 |
 | Blocked due to 2FA | Your GitHub account needs 2FA enabled with an approved method. See Step 2. |
-| SSO authorization says you don't have access | Confirm with your admin that you have been added to the `sso-github-users` group in Entra. |
+| SSO authorization says you don't have access | Confirm with your admin that you have been added to the appropriate SSO-enabled GitHub group in Entra. |
