@@ -1,41 +1,43 @@
-# Prerequisites
-*.d
+# ============================================================
+# Obsidian
+# ============================================================
+.obsidian/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# ============================================================
+# macOS
+# ============================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
 
-# Precompiled Headers
-*.gch
-*.pch
+# ============================================================
+# Windows
+# ============================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# Linker files
-*.ilk
+# ============================================================
+# Common editors / IDEs
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# ============================================================
+# Misc
+# ============================================================
+*.log
+*.tmp
+*.bak
